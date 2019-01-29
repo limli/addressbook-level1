@@ -26,11 +26,14 @@
   add []\[;] p/12345 e/valid@e.mail
   add Valid Name p/not_numbers e/valid@e.mail
   add Valid Name p/12345 e/notAnEmail
+  add Valid Name p/12345 e/notAnEmail@email.INVALIDDOMAIN
 
   # should add correctly
   add Adam Brown p/111111 e/adam@gmail.com
   list
   add Betsy Choo p/222222 e/benchoo@nus.edu.sg
+  list
+  add John-Smith p/123-456-789 e/hello-world@apple.banana.com
   list
 
   # order of phone and email should not matter
