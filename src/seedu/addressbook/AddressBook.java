@@ -1048,8 +1048,7 @@ public class AddressBook {
      * @param name to be validated
      */
     private static boolean isPersonNameValid(String name) {
-        return name.matches("(\\w|\\s)+");  // name is nonempty mixture of alphabets and whitespace
-        //TODO: implement a more permissive validation
+        return name.matches("(\\w|\\s|-)+");  // name is nonempty mixture of alphabets, whitespace, and hyphens
     }
 
     /**
